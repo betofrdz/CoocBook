@@ -4,23 +4,37 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logopapa"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".NavigationD"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity android:name=".SplashScreen"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".SplashScreen"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
             <intent-filter>
+                <action android:name="android.MainLogin" />
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainEntradas" />
+        <activity android:name=".MainCarnes" />
+        <activity android:name=".MainEnsaladas" />
+        <activity android:name=".MainGuarniciones" />
+        <activity android:name=".MainPastas" />
+        <activity android:name=".MainDesayunos" />
+        <activity android:name=".MainSopas" />
+        <activity android:name=".MainPescados" />
+        <activity android:name=".MainPostres" />
+        <activity android:name=".MainMostrar"></activity>
     </application>
 
 </manifest>

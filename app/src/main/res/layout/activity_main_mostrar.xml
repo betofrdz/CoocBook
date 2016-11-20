@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rowCount="6"
+    android:columnCount="3"
+    android:orientation="vertical"
+    android:background="#FFF789"
+    android:useDefaultMargins="true">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_receta"
+        android:text="Nombre de la receta receta"
+        android:textSize="22sp"
+        tools:textColor="#303030" />
+
+    <MultiAutoCompleteTextView
+        android:text="Procedimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etdescripcion"
+        android:layout_weight="0.29"
+        android:textSize="20sp"
+        tools:textColor="#303030" />
+
+    <Button
+        android:text="Mostrar recetas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBuscar" />
+
+</LinearLayout>

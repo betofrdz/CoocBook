@@ -83,7 +83,7 @@ public class Menu extends Fragment {
         imageEntradas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentEntradas = new Intent(v.getContext(), Entradas.class);
+                Intent intentEntradas = new Intent(v.getContext(), MainEntradas.class);
                 startActivity(intentEntradas);
             }
         });
@@ -91,7 +91,7 @@ public class Menu extends Fragment {
         imageCarnes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentCarnes = new Intent(v.getContext(), Carnes.class);
+                Intent intentCarnes = new Intent(v.getContext(), MainCarnes.class);
                 startActivity(intentCarnes);
             }
         });
@@ -99,7 +99,7 @@ public class Menu extends Fragment {
         imageGuarniciones.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentGuarniciones = new Intent(v.getContext(), Guarniciones.class);
+                Intent intentGuarniciones = new Intent(v.getContext(), MainGuarniciones.class);
                 startActivity(intentGuarniciones);
             }
         });
@@ -107,7 +107,7 @@ public class Menu extends Fragment {
         imageEnsaladas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentEnsaladas = new Intent(v.getContext(), Ensaladas.class);
+                Intent intentEnsaladas = new Intent(v.getContext(), MainEnsaladas.class);
                 startActivity(intentEnsaladas);
             }
         });
@@ -115,7 +115,7 @@ public class Menu extends Fragment {
         imagePastas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentPastas = new Intent(v.getContext(), Pastas.class);
+                Intent intentPastas = new Intent(v.getContext(), MainPastas.class);
                 startActivity(intentPastas);
             }
         });
@@ -123,7 +123,7 @@ public class Menu extends Fragment {
         imageDesayunos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentDesayunos = new Intent(v.getContext(), Desayunos.class);
+                Intent intentDesayunos = new Intent(v.getContext(), MainDesayunos.class);
                 startActivity(intentDesayunos);
             }
         });
@@ -131,7 +131,7 @@ public class Menu extends Fragment {
         imageSopas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentSopas = new Intent(v.getContext(), Sopas.class);
+                Intent intentSopas = new Intent(v.getContext(), MainSopas.class);
                 startActivity(intentSopas);
             }
         });
@@ -139,7 +139,7 @@ public class Menu extends Fragment {
         imagePescados.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentPescados = new Intent(v.getContext(), Pescados.class);
+                Intent intentPescados = new Intent(v.getContext(), MainPescados.class);
                 startActivity(intentPescados);
             }
         });
@@ -147,7 +147,7 @@ public class Menu extends Fragment {
         imagePostres.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentPostres = new Intent(v.getContext(), Postres.class);
+                Intent intentPostres = new Intent(v.getContext(), MainPostres.class);
                 startActivity(intentPostres);
             }
         });

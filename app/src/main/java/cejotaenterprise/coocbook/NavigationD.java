@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -17,7 +18,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class NavigationD extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, cejotaenterprise.coocbook.Menu.OnFragmentInteractionListener, Favoritos.OnFragmentInteractionListener, MisRecetas.OnFragmentInteractionListener, Glosario.OnFragmentInteractionListener, Buscar.OnFragmentInteractionListener {
+        implements NavigationView.OnNavigationItemSelectedListener, cejotaenterprise.coocbook.Menu.OnFragmentInteractionListener, MisRecetas.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,26 +68,9 @@ public class NavigationD extends AppCompatActivity
             fragment = new cejotaenterprise.coocbook.Menu();
             FragmentoSeleccionado=true;
 
-        } else if (id == R.id.nav_favoritos) {
-
-            fragment = new Favoritos();
-            FragmentoSeleccionado=true;
-
         } else if (id == R.id.nav_misrecetas) {
-
-            fragment = new MisRecetas();
+            fragment = new cejotaenterprise.coocbook.Menu();
             FragmentoSeleccionado=true;
-
-        } else if (id == R.id.nav_buscar) {
-
-            fragment = new Buscar();
-            FragmentoSeleccionado=true;
-
-        } else if (id == R.id.nav_glosario) {
-
-            fragment = new Glosario();
-            FragmentoSeleccionado=true;
-
         }
 
         if(FragmentoSeleccionado){
@@ -102,4 +86,5 @@ public class NavigationD extends AppCompatActivity
     public void onFragmentInteraction(Uri uri) {
 
     }
+
 }
