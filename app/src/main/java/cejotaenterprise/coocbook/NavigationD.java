@@ -69,7 +69,7 @@ public class NavigationD extends AppCompatActivity
             FragmentoSeleccionado=true;
 
         } else if (id == R.id.nav_misrecetas) {
-            fragment = new cejotaenterprise.coocbook.Menu();
+            fragment = new MisRecetas();
             FragmentoSeleccionado=true;
         }
 
